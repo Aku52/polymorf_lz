@@ -8,7 +8,7 @@ class Processing:
         pass
 
     # Oбработка и фильтрация данных файла
-    def obrabotka (self):
+    def __invert__(self):
        
         # Читаем файл
         df = pd.read_csv('var2.csv')
@@ -30,7 +30,8 @@ class Processing:
 
 def main():
     pay = Processing()
-    pay.obrabotka()
+    ~pay
+
 
 if __name__ == "__main__":
     main()
